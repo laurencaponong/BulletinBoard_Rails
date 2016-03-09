@@ -1,5 +1,14 @@
-<% @messages.each do |message| %>
+<div class="container">
+	<div class="row">
 
-	<h2><%= message.title %></h2>
-	<%= link_to "View Message", message_path(message), class: "btn btn-primary" %>
-<% end %>
+			<% @messages.each do |message| %>
+
+			<div class="col-md-3 col-md-offset-1 message text-center">
+				<h4><%= link_to message.title, message_path(message) %></h4>
+				<%= link_to "View Message", message_path(message), class: "btn viewMessage" %>
+			</div>
+
+			<% end %>
+
+	</div>
+</div>

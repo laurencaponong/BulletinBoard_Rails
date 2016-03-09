@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BulletinBoard</title>
+  <title>ARCANUM</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div class="nvabar navbar-default">
+<div class="navbar navbar-inverse">
 	<div class="container">
 		<div class="navbar-header">
-				<%= link_to "Bulletin Board", root_path, class: "navbar-brand" %>
+				<%= link_to "ARCANUM", root_path, class: "navbar-brand" %>
 		</div>
 
 		<ul class="nav navbar-nav">
@@ -24,7 +24,7 @@
 		</ul>
 
 		<% if user_signed_in? %> 
-		<p><%= link_to "New Message", new_message_path, class: "navbar-right navbar-text btn btn-danger" %></p>
+		<p><%= link_to "New Message", new_message_path, class: "navbar-right navbar-text" %></p>
 		<% end %>
 	</div>
 </div>
