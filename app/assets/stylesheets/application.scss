@@ -27,7 +27,7 @@ h2 {font-size: 4.3rem;}
 h3 {font-size: 4rem;}
 h4 {font-size: 3.5rem;}
 h5 {font-size: 3rem; font-weight: 200;}
-h6 {font-size: 2.5rem;}
+h6 {font-size: 2rem;}
 
 a, a:hover {
 	text-decoration: none;
@@ -58,8 +58,12 @@ body {
 	color: #FFFFFF;
 }
 
-.viewMessage:hover {
+.viewMessage:hover, .viewMessage:visited {
 	color: #FFFFFF;
+}
+
+.comments {
+	margin-bottom: 30px;
 }
 
 .logo {
