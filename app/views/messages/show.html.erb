@@ -2,23 +2,26 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<h1><%= @message.title %></h1>
-				<h5>Posted by: <%= @message.user.email %> <%= time_ago_in_words(@message.created_at) %> ago</h5> <br />
+				<h5>Posted by <%= @message.user.email %>, <%= time_ago_in_words(@message.created_at) %> ago</h5> <br />
 				<h4><%= @message.description %></h4> <br />
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-lg-12">
+			<hr>
 		<h3>Comments</h3>
 		<% if @message.comments == nil %>
 			<p>No comments yet! Write one below.</p>
 			
 			<% else %>
-			<h2><%= render @message.comments %></h2>
+			<h6><%= render @message.comments %></h6>
 		<% end %>
 
 		<h3>Reply to this message</h3>
 		<%= render 'comments/form' %>
+
+		<br />
 
 		<%= link_to "Back", root_path %>
 
