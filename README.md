@@ -5,3 +5,4 @@ A message board where you can leave a message, reply to a message, edit/delete y
 Using:
 * Bootstrap
 * Devise
+* Simple form
